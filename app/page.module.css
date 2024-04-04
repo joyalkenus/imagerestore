@@ -1,0 +1,117 @@
+.container {
+    background-image: url('/background.png');
+    background-size: cover;
+    background-color: #f1e4c0;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .logo {
+    width: 200px;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .title {
+    font-family: 'Calligraphy Font', cursive;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .description {
+    font-size: 1.2rem;
+    color: #666;
+    text-align: center;
+    max-width: 600px;
+    margin-bottom: 2rem;
+  }
+  
+  .uploadSection {
+    margin-bottom: 2rem;
+    
+  }
+  
+  .uploadSection label {
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-style: italic;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+  }
+  
+  .uploadSection input[type='file'] {
+    display: block;
+    margin-top: 0.5rem;
+    
+  }
+  
+  .processButton {
+    padding: 0.5rem 1.5rem;
+
+    font-size: 0.7rem;
+    font-weight: 100 ;
+    color: #fff;
+    background-color: #4d4b45;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .processButton:hover {
+    background-color: #dbde35;
+  }
+  
+  .processButton:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .processing {
+    opacity: 0.7;
+  }
+  .fileInput {
+    visibility: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+  
+  .uploadButton {
+    display: inline;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #181815; /* Cream color text to match the background */
+    background-color: #072b56;
+     /* Dark color to match the logo */
+    border-radius: 0.8rem;
+    
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .uploadButton:hover,
+  .uploadButton:focus {
+    background-color: #42e0a6; /* Muted teal color for hover state */
+  }
+  
+  /* Add custom styles for when file is being processed */
+  .processing {
+    background-color: #ccc;
+    cursor: not-allowed;
+    opacity: 0.7;
+  }
